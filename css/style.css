@@ -1,0 +1,626 @@
+@charset "UTF-8";
+/* PÁGINA NOSOTROS */
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+.contenedorNosotros {
+  background-color: rgb(245, 246, 250);
+  flex-wrap: wrap;
+}
+.contenedorNosotros .tituloNosotros {
+  color: rgba(86, 88, 88, 0.671);
+  font-size: 20px;
+  text-align: center;
+  padding-top: 40px;
+}
+.contenedorNosotros .subtituloNosotros {
+  text-align: center;
+}
+.contenedorNosotros .contenedorFundador {
+  justify-content: space-evenly;
+  align-items: center;
+}
+.contenedorNosotros .contenedorFundador .fundador {
+  font-size: 15px;
+  color: #007a89;
+}
+
+.contenedorEquipo {
+  background-color: rgb(245, 246, 250);
+  padding-top: 100px;
+}
+.contenedorEquipo h4 {
+  padding-left: 80px;
+  font-size: 15px;
+}
+.contenedorEquipo img {
+  transition: all 400ms ease;
+}
+.contenedorEquipo img:hover {
+  transform: translateY(-3%);
+}
+
+.empleados {
+  width: 10px;
+}
+
+@media screen and (max-width: 849px) {
+  .columna1 {
+    display: none;
+  }
+}
+/* servicios */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+#servicios {
+  width: 100%;
+  height: 700px;
+  background-color: white;
+}
+
+@media screen and (max-width: 1320px) {
+  #servicios {
+    height: 1200px;
+  }
+}
+@media screen and (max-width: 879px) {
+  #servicios {
+    height: 1600px;
+  }
+}
+/* NAVBAR */
+header {
+  width: 100%;
+  height: 80px;
+  background-color: #007a89;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+
+.logo {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.bars {
+  display: none;
+}
+
+.nav-bar ul {
+  display: flex;
+}
+
+.nav-bar ul li a {
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 25px;
+  border-radius: 15px;
+  transition: 0.2s;
+  margin: 0px 5px;
+  text-decoration: none;
+}
+
+.nav-bar ul li a:hover {
+  color: #007a89;
+  background-color: aquamarine;
+}
+
+.nav-bar ul li a.active {
+  color: #007a89;
+  background-color: aquamarine;
+}
+
+@media screen and (max-width: 900px) {
+  header {
+    padding: 0px 30px;
+  }
+  .bars {
+    display: block;
+    cursor: pointer;
+  }
+  .bars .line {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0px;
+  }
+  .nav-bar {
+    height: 0px;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background-color: rgb(23, 26, 24);
+    transition: 0.5s;
+    overflow: hidden;
+  }
+  .nav-bar.active {
+    height: 450px;
+  }
+  .nav-bar ul {
+    display: block;
+    width: fit-content;
+    margin: 88px auto 0 auto;
+    text-align: center;
+    transform: 0.5s;
+    opacity: 0;
+  }
+  .nav-bar.active ul {
+    opacity: 1;
+  }
+  .nav-bar ul li a {
+    margin-bottom: 20px;
+  }
+  .contenedor {
+    margin-top: 500px;
+  }
+}
+.serviciosTitulo {
+  text-align: center;
+}
+
+.contenedor {
+  width: 100%;
+  display: flex;
+  background-color: #fff;
+  max-width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: white;
+}
+
+.card {
+  width: 400px;
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 400ms ease;
+}
+.card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
+.card .img {
+  width: 100%;
+  height: 210px;
+}
+.card .contenido {
+  padding: 15px;
+  text-align: center;
+}
+.card .contenido p {
+  line-height: 1.5;
+}
+.card .contenido h3 {
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.card .contenido a {
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px;
+  color: #007a89;
+  border: 1px solid black;
+  border-radius: 4px;
+  transition: all 400ms ease;
+}
+.card .contenido a:hover {
+  background: #007a89;
+  color: #fff;
+}
+
+.contenedorAcesoramiento {
+  text-align: center;
+  background-color: rgb(245, 246, 250);
+  width: 100%;
+  height: 150px;
+}
+.contenedorAcesoramiento .botonAcesoramiento {
+  background-color: rgb(245, 246, 250);
+  border-radius: 10px;
+}
+.contenedorAcesoramiento .botonAcesoramiento a {
+  text-decoration: none;
+  color: black;
+}
+.contenedorAcesoramiento .botonAcesoramiento:hover {
+  background-color: #007a89;
+  color: #fff;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+@media screen and (max-width: 932px) {
+  footer .red-social {
+    display: none;
+  }
+  h2 {
+    display: none;
+  }
+  .pablocardoso {
+    width: 500px;
+  }
+  .logoLoyal {
+    display: none;
+  }
+}
+@media screen and (max-width: 1132px) {
+  .logoSection3 {
+    display: none;
+  }
+}
+/* Contacto */
+.boton {
+  margin-left: 500px;
+}
+
+.cuerpo {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.formulario {
+  padding: 50px 55px;
+  box-shadow: 0 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  text-align: center;
+  text-align: center;
+  width: 340px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+h2 {
+  color: #283629;
+  font-size: 35px;
+}
+
+label {
+  color: #283629;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+input, textarea {
+  padding: 17px 25px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  background-color: #EDFFF0;
+  border: 20px solid #EDFFF0;
+  color: #283629;
+  outline: none;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #b5cab6;
+}
+
+.form-txt {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.form-txt a {
+  color: #b5cab6;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn {
+  font-size: 16px;
+  color: #FFFFFF;
+  border: 0;
+  border-radius: 25px;
+  background-color: #51d94c;
+  box-shadow: 0 0 20px rgba(25, 254, 0, 0.4);
+}
+
+.btn:hover {
+  background-color: #50E04B;
+}
+
+@media screen and (max-width: 991px) {
+  body {
+    padding: 30px;
+  }
+  form {
+    padding: 50px 30px;
+    width: 100%;
+  }
+  input {
+    padding: 15px;
+  }
+}
+.tituloContacto {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.barraNavegacion {
+  padding: 2px;
+  list-style: none;
+  display: flex;
+}
+.barraNavegacion .navLink {
+  text-decoration: none;
+  padding: 5px 15px;
+  margin: 10px;
+  color: #007a89;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.sec {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.uno {
+  background: url(../assets/img/fondo.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.sesgouno {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-width: 15vh 0 0 100vw;
+  border-style: solid;
+  border-color: transparent transparent transparent #fff;
+}
+
+.sesgodos {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-width: 15vh 100vw 0 0;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  height: 80px;
+}
+
+.logo img {
+  height: 100%;
+}
+
+.contenedor {
+  width: 100%;
+  background-color: transparent;
+}
+
+.enlaces a {
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 300;
+  margin-left: 30px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.texto {
+  text-align: center;
+  color: #fff;
+  margin: 150px 0;
+}
+
+.texto h1 {
+  font-size: 120px;
+}
+
+.texto p {
+  font-weight: 300;
+  font-size: 60px;
+  color: bisque;
+}
+
+.nosotros {
+  background-color: white;
+  margin-top: 100px;
+  flex-wrap: wrap;
+}
+.nosotros .nosotrosContenedor {
+  background-color: white;
+  width: 100%;
+  height: 600px;
+  font-family: "Roboto", sans-serif;
+  flex-wrap: wrap;
+}
+.nosotros .tituloDos {
+  color: blue;
+}
+.nosotros .parrafoNosotros {
+  color: dimgrey;
+}
+.nosotros .botonServicios {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  text-decoration: none;
+  color: #007a89;
+  transition: all 400ms ease;
+}
+.nosotros .bi {
+  font-size: 20px;
+  color: #007a89;
+}
+.nosotros .botonServicios {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  text-decoration: none;
+  color: #007a89;
+  transition: all 400ms ease;
+}
+.nosotros .botonServicios:hover {
+  color: white;
+  background-color: #007a89;
+}
+
+.anuncio {
+  margin-top: 200px;
+}
+
+.anuncio h3 {
+  text-align: center;
+  font-size: 50px;
+  color: #007a89;
+}
+
+.section3 {
+  justify-content: space-around;
+  display: flex;
+  background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);
+}
+
+.lista3 {
+  font-size: 30px;
+}
+
+.logoSection3 {
+  width: 300px;
+  height: 300px;
+  margin: 30px 0;
+}
+
+#buscanos {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.texto1 {
+  color: #007a89;
+}
+
+/* Pie de Pagina */
+.pie-pagina {
+  width: 100%;
+  background-color: #0a141d;
+}
+.pie-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img {
+  width: 250px;
+}
+.pie-pagina .grupo-1 .box h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p {
+  color: #eeffee;
+  margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a i {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  font-size: 40px;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .nosotros .textono {
+    display: none;
+  }
+  .parrafoNosotros {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 932px) {
+  footer .red-social {
+    display: none;
+  }
+  h2 {
+    display: none;
+  }
+  .pablocardoso {
+    width: 500px;
+  }
+  .logoLoyal {
+    display: none;
+  }
+}
+@media screen and (max-width: 1132px) {
+  .logoSection3 {
+    display: none;
+  }
+}
+small {
+  color: blue;
+}
+
+@media screen and (max-width: 551px) {
+  .tituloR {
+    font-size: 10px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,308 @@
+.barraNavegacion{
+    padding: 2px;
+    list-style: none;
+    display: flex;
+
+    .navLink{
+        text-decoration: none;
+        padding: 5px 15px;
+        margin: 10px;
+        color: #007a89;
+    }
+
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.sec{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.uno{
+    background: url(../assets/img/fondo.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.sesgouno{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 15vh 0 0 100vw;
+    border-style: solid;
+    border-color: transparent transparent transparent #fff;
+}
+
+.sesgodos{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-width: 15vh 100vw 0 0;
+    border-style: solid;
+    border-color: #fff transparent transparent transparent;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.logo{
+    height: 80px;
+}
+
+.logo img{
+    height: 100%;
+}
+
+.contenedor{
+    width: 100%;
+    
+    background-color: transparent;
+}
+
+.enlaces a{
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 300;
+    margin-left: 30px;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.texto{
+    text-align: center;
+    color: #fff;
+    margin: 150px 0;
+}
+
+.texto h1{
+    font-size: 120px;
+}
+
+.texto p{
+    font-weight: 300;
+    font-size: 60px;
+    color:bisque
+}
+
+.nosotros{
+    background-color: white;
+    margin-top: 100px;
+    flex-wrap: wrap;
+
+    .nosotrosContenedor{
+        background-color: white;
+        width: 100%;
+        height: 600px;
+        font-family: 'Roboto', sans-serif;
+        flex-wrap: wrap;
+    }
+
+    .tituloDos{
+        color: blue;
+    }
+
+    .parrafoNosotros{
+        color: dimgrey;
+    }
+
+    .botonServicios{
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 10px;
+        text-decoration: none;
+        color: #007a89;
+        transition: all 400ms ease;
+    }
+
+    .bi{
+        font-size: 20px;
+        color: #007a89;
+    }
+
+    .botonServicios{
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 10px;
+        text-decoration: none;
+        color: #007a89;
+        transition: all 400ms ease;
+    }
+    
+    .botonServicios:hover{
+        color: white;
+        background-color: #007a89;
+    }
+}
+
+.anuncio{
+    margin-top: 200px;
+}
+.anuncio h3{
+    text-align: center;
+    font-size: 50px;
+    color: #007a89;
+    
+}
+
+.section3{
+    justify-content: space-around;
+    display: flex;
+    background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);
+}
+
+.lista3{
+    font-size: 30px;
+}
+
+.logoSection3{
+    width: 300px;
+    height: 300px;
+    margin: 30px 0
+}
+
+#buscanos{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.texto1{
+    color: #007a89;
+}
+
+/* Pie de Pagina */
+.pie-pagina{
+    width: 100%;
+    background-color: #0a141d;
+
+    .grupo-1{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+        padding: 45px 0px;
+    }
+    .grupo-1 .box figure{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .grupo-1 .box figure img{
+        width: 250px;
+    }
+    .grupo-1 .box h2{
+        color: #fff;
+        margin-bottom: 25px;
+        font-size: 20px;
+    }
+
+    .grupo-1 .box p{
+        color: #efef;
+        margin-bottom: 10px;
+    }
+    .grupo-1 .red-social a i{
+        display: inline-block;
+        text-decoration: none;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        font-size: 40px;
+        margin-left: 10px;
+    }
+
+}
+
+
+@media screen and (max-width: 767px) {
+    .nosotros .textono{
+        display: none;
+    }
+    .tituloDos{
+       
+    }
+    .parrafoNosotros{
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 932px){
+    footer .red-social{
+        display: none
+    }
+    h2{
+        display: none
+    }
+    .pablocardoso{
+        width: 500px;
+    }
+    .logoLoyal{
+        display: none
+    }
+}
+
+@media screen and (max-width: 1132px){
+    .logoSection3{
+        display: none;
+    }
+}
+
+small{
+    color: blue;
+}
+
+@media screen and (max-width: 551px) {
+    .tituloR{
+        font-size: 10px
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
